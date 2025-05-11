@@ -10,10 +10,12 @@ In this lab, I monitored security events and incidents across multiple data sour
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Active Directory Domain Services
-- PowerShell
+- Virtual Machines (Windows & Linux)
+- Network Security Groups (NSGs)
+- Azure Monitor / Network Watcher
+- Log Analytics Workspace
+- Microsoft Sentiel
+- Kusto Query Language (KQL)
 
 <h2>Operating Systems Used </h2>
 
@@ -22,10 +24,10 @@ In this lab, I monitored security events and incidents across multiple data sour
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Phase 1: Vulnerable Deployment
+- Phase 2: 24-Hour Threat Window
+- Phase 3: Hardening & Remediation
+- Phase 3: Post-Remediation Analysis
 
 <h2>Deployment and Configuration Steps</h2>
 
