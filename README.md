@@ -1,6 +1,8 @@
 # SOC Security Monitoring and Alert Comparison Lab
 <p align="center">
-<img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
+
+ ![Screenshot 2025-05-11 203247](https://github.com/user-attachments/assets/17b34870-a1e5-4cad-b64a-8bc08f892ebb)
+
 </p>
 
 In this lab, I monitored security events and incidents across multiple data sources, including SecurityEvent, Syslog, SecurityAlert, SecurityIncident, and AzureNetworkAnalytics_CL. The environment was observed for 24 hours, during which I collected and analyzed alerts and incidents. After securing the environment, I allowed another 24-hour observation period and compared the number and severity of alerts before and after implementing the security measures. This lab demonstrates my ability to monitor security events, respond to incidents, and evaluate the effectiveness of security hardening in a SOC environment.
@@ -27,7 +29,7 @@ In this lab, I monitored security events and incidents across multiple data sour
 - Phase 1: Vulnerable VM Deployment
 - Phase 2: 24-Hour Threat Window
 - Phase 3: Hardening & Remediation
-- Phase 3: Post-Remediation Analysis
+- Phase 4: Post-Remediation Analysis
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -63,9 +65,32 @@ Applied:
 - Strong password policies
 - Disabled unnecessary ports/services
 - Configured NSGs to allow only whitelisted IPs
-- Account lockout (Windows)
 
 ![Screenshot 2025-05-11 175821](https://github.com/user-attachments/assets/15edb757-ca1a-43f3-a28d-a7e76e04f562)
+![Screenshot 2025-05-11 195036](https://github.com/user-attachments/assets/7c8c0a2e-d81b-4984-ad93-015a8d5c0354)
+![Screenshot 2025-05-11 200322](https://github.com/user-attachments/assets/f590ed6f-b963-46ee-9f88-1dd03d297250)
+![Screenshot 2025-05-11 200348](https://github.com/user-attachments/assets/ea7421e3-a0f2-409d-88c8-32d3e2c80b6e)
+
+Phase 4: Post-Remediation Analysis
+
+After completing all hardening steps including OS patching, disabling exposed services, enforcing password complexity, tightening NSG rules, and deploying brute-force prevention, the environment was left untouched for an additional 24 hours to monitor the impact. The results were conclusive and showed a dramatic drop in malicious activity across all metrics:
+
+![Screenshot 2025-05-11 202127](https://github.com/user-attachments/assets/8ee22173-441b-4300-9210-d94db35a33c5)
+![Screenshot 2024-10-16 173742](https://github.com/user-attachments/assets/5c1f5af2-40aa-4941-b416-591b320056d9)
+
+
+These findings validate that even basic cloud security hardening significantly reduces a VM's exposure and attractiveness to automated attacks and global threat actors. By applying foundational defense-in-depth techniques, this experiment demonstrated how a vulnerable, high-risk environment can be transformed into a low-noise, hardened asset within a single cloud platform.
+
+This phase reinforces the value of:
+
+- Proactive monitoring
+- Geo-aware firewall policies
+- Least privilege network access
+- Routine patch management
+
+
+
+
 
 
 
